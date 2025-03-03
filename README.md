@@ -1,7 +1,7 @@
 # RAG-Based AI Agent Assessment Task
 
 ## Overview
-Build a knowledge-based AI support agent that uses RAG (Retrieval Augmented Generation) to answer customer queries and send email responses. The system should demonstrate your ability to implement efficient document retrieval and email communication capabilities.
+Build a knowledge-based AI support agent that uses RAG (Retrieval Augmented Generation) to answer customer queries. The system should demonstrate your ability to implement efficient document retrieval.
 
 ## Requirements
 
@@ -25,17 +25,10 @@ Build a knowledge-based AI support agent that uses RAG (Retrieval Augmented Gene
    - Handle cases where no relevant information is found
    - Ensure response accuracy against source material
 
-### Email Integration
-- Implement email sending functionality using SMTP
-- Create email templates for different response types
-- Include source citations in email responses
-- Handle email formatting (HTML/plain text)
-- Add attachments capability for relevant documents
-
 ### Technical Requirements
 
 #### Vector Store Implementation
-- Use a vector database (Pinecone, Qdrant, or Weaviate)
+- Use a vector database (ChromaDB, Pinecone, Qdrant, or Weaviate)
 - Implement efficient embedding generation
 - Create proper indexing structure
 - Handle document updates
@@ -45,17 +38,12 @@ Build a knowledge-based AI support agent that uses RAG (Retrieval Augmented Gene
 - Create endpoints for:
   - Document ingestion
   - Query processing
-  - Email sending
   - Knowledge base management
-- Implement proper API documentation
-- Add authentication for API endpoints
 
 ### Knowledge Base
 The system should handle:
-- Product documentation
-- FAQ documents
-- Technical specifications
-- Support guidelines
+- PDF documents
+- Word Documents
 
 ## Deliverables
 
@@ -71,22 +59,14 @@ The system should handle:
    - System architecture diagram
    - API documentation
 
-3. Performance Analysis
-   - Query response times
-   - Retrieval accuracy metrics
-   - Email delivery success rates
-   - System resource usage
-
 ## Time Allocation
-- 2-3 days for completion
+- 1 Week for completion
 - Submit on the provided GitHub repository
 
 ## Sample Test Cases
-1. Process and query technical documentation
-2. Generate and send email responses
-3. Handle edge cases (no relevant info, multiple sources)
-4. Demonstrate source attribution
-5. Show error handling
+1. Process and query documents
+2. Handle edge cases (no irrelevant info, multiple sources handling)
+3. Show error handling
 
 ## Submission Requirements
 1. GitHub repository with:
@@ -98,12 +78,11 @@ The system should handle:
 2. Demo showing:
    - Document ingestion process
    - Query-response examples
-   - Email sending capabilities
    - Error handling scenarios
 
 ## Notes for Candidates
 - Take any test dataset from the internet
-- Focus on RAG quality and email reliability
+- Focus on RAG quality
 - Document your chunking strategy
 - Explain context management approach
 - Include ideas for future improvements
